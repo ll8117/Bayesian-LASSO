@@ -10,9 +10,13 @@ It is organised in a dissertation-friendly format, ready to be used as the theor
 We begin with the standard linear regression model:
 
 $$
-y = X\beta + \varepsilon, 
-where 
-\(\varepsilon \sim N(0, \sigma^2 I)\).
+y = X\beta + \varepsilon,
+$$
+
+where  
+
+$$
+\varepsilon \sim N(0, \sigma^2 I).
 $$
 
 In component form:
@@ -108,7 +112,7 @@ $$
 
 ### Priors
 - $\sigma^2 \sim \text{Inv-Gamma}(a, b)$  
-- $\beta_0 \sim text{flat prior}$  
+- $\beta_0 \sim \text{flat prior}$  
 - $\beta \mid \sigma^2, \tau^2 \sim N(0, \sigma^2 \mathrm{diag}(\tau_1^2, ..., \tau_p^2))$
 - $\tau_i^2 \mid \lambda^2 \sim \text{Exponential}\left(\frac{1}{2}\lambda^2\right)$
 - $\lambda^2 \sim \text{Gamma}(a_\lambda, b_\lambda)$
